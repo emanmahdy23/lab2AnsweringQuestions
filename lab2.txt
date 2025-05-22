@@ -1,0 +1,56 @@
+2. What is a Pull Request and Request? What's the difference between them?
+
+Pull Request (PR):
+
+A pull request is a GitHub (or Git-based platform) feature used when you want to merge changes from one branch or fork into another (usually into the main branch of a repository).
+
+It's typically used in collaborative workflows, especially in open-source projects.
+
+A PR allows for code review, discussion, CI tests, etc., before merging.
+
+Request (in general):
+
+A request is a more general term. It could mean asking for something (like a change, a resource, or even access).
+
+In Git terms, it's not a specific command or feature—Pull Request is the correct term.
+
+Difference:
+
+"Pull Request" is a specific version control feature.
+
+"Request" is a general action (not specific to Git)
+
+
+
+4. What is the command to delete the branch "new-email"?
+
+git branch -d new-email     # Safe delete (only if merged)
+git branch -D new-email     # Force delete
+
+
+5. What is the command to push the current repository to the remote origin?
+git push origin main
+
+
+6. What is Git Rebase and how to use it?
+Git Rebase: A way to reapply commits from one branch onto another. 
+It creates a linear history, unlike merge which may create merge commits
+
+git checkout feature
+git rebase main
+
+
+7. What is the command to get all the change history of the remote repository "origin"?
+git fetch origin
+git log origin/main --oneline 
+
+
+8. What is the command to show the differences between the current branch and the branch "new-email"?
+git diff new-email
+
+9. What are tags? Make five tags and release two of them
+git tag v1.0
+git tag v1.1
+git tag v2.0
+git tag v2.1
+git tah v3.0
